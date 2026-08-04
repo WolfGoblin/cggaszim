@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - CG Gas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#4e5f7c",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c4c6cd",
+                        "on-secondary-fixed": "#191c21",
+                        "on-surface": "#191c1d",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#ffb4a8",
+                        "outline": "#926f69",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-container": "#606369",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#930000",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#c8d9fc",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed-variant": "#930000",
+                        "on-tertiary-fixed-variant": "#364763",
+                        "secondary-fixed": "#e1e2e9",
+                        "outline-variant": "#e7bdb6",
+                        "primary-container": "#c00000",
+                        "on-error": "#ffffff",
+                        "surface-white": "#FFFFFF",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-fixed": "#410000",
+                        "inverse-surface": "#2e3132",
+                        "tertiary-fixed-dim": "#b6c7e9",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#081c36",
+                        "surface": "#f8f9fa",
+                        "tertiary-fixed": "#d6e3ff",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-container": "#dedfe7",
+                        "tertiary": "#364763",
+                        "on-background": "#191c1d",
+                        "on-surface-variant": "#5d3f3b",
+                        "background": "#f8f9fa",
+                        "border-subtle": "#E5E7EB",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-fixed-variant": "#44474d",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary": "#5c5e64",
+                        "deep-navy": "#0A1D37",
+                        "industrial-charcoal": "#12151A",
+                        "surface-variant": "#e1e3e4",
+                        "safety-red": "#C00000",
+                        "primary-fixed": "#ffdad4",
+                        "surface-tint": "#c00000",
+                        "on-primary-container": "#ffcdc5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "section-padding": "80px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "caption": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-bold": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md pt-[72px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-white dark:bg-industrial-charcoal border-b border-border-subtle dark:border-on-surface-variant shadow-sm transition-all duration-300 ease-in-out hidden md:block">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md text-primary dark:text-safety-red font-bold">
+                CG Gas
+            </div>
+<div class="flex space-x-gutter">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors hover:opacity-90 font-body-md text-body-md" href="#">Home</a>
+<a class="text-primary dark:text-safety-red font-bold border-b-2 border-primary dark:border-safety-red pb-1 font-body-md text-body-md" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors hover:opacity-90 font-body-md text-body-md" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors hover:opacity-90 font-body-md text-body-md" href="#">Fireplaces</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors hover:opacity-90 font-body-md text-body-md" href="#">Geysers</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors hover:opacity-90 font-body-md text-body-md" href="#">Contact</a>
+</div>
+<button class="bg-safety-red text-on-primary px-4 py-2 rounded font-label-bold text-label-bold hover:opacity-90 transition-opacity">WhatsApp Us</button>
+</div>
+</nav>
+<!-- Mobile Header Placeholder (Simplified for logic) -->
+<div class="md:hidden fixed top-0 w-full z-50 bg-surface-white border-b border-border-subtle p-4 flex justify-between items-center shadow-sm">
+<div class="text-headline-md font-headline-md text-primary font-bold">CG Gas</div>
+<button><span class="material-symbols-outlined">menu</span></button>
+</div>
+<!-- Hero Section -->
+<section class="relative bg-industrial-charcoal text-on-primary py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h1 class="font-display-lg text-display-lg mb-stack-md text-on-primary">Fueling Zimbabwe with Precision & Safety</h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim mb-stack-lg max-w-xl">
+                    Based in Greendale, Harare, CG Gas is your premier partner for LP gas solutions. We specialize in door-to-door delivery, premium accessories, expert installation, and comprehensive repair services for both domestic and commercial clients.
+                </p>
+<div class="flex gap-4">
+<span class="bg-safety-red text-on-primary px-4 py-2 rounded-full font-label-bold text-label-bold inline-flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span> Safety First
+                    </span>
+<span class="bg-surface-white text-industrial-charcoal px-4 py-2 rounded-full font-label-bold text-label-bold inline-flex items-center gap-2">
+<span class="material-symbols-outlined">local_shipping</span> Nationwide Delivery
+                    </span>
+</div>
+</div>
+<div class="relative h-64 md:h-96 rounded-lg overflow-hidden border border-on-surface-variant">
+<img alt="CG Gas Storefront" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJgNcJeiXwJyHxEcRcm19dbM5RbGto1uDl4-_qqlhCNx5gPK7y8jQRaE_1wVxoDImk2uZyo09aUKSVIU0fDoZLpsRe2yXb3SQRyZipVOHm7tLfLxtHcnFOgqhbIrLxwv7VmBfisc1ug67I9EiD7580YwWvs7vjrycm3fvD84TqaIoMRcDt1YaV7h7ibw_LyQond2WaELHGBirVwGE4G1LGyIuz57GIWVVx9_5X_rKorUt1OeS1k7pdNXCUhCBffwXKKTs"/>
+<div class="absolute inset-0 bg-industrial-charcoal/30"></div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission Bento Grid -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-bright">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-industrial-charcoal">Our Purpose</h2>
+<div class="w-24 h-1 bg-safety-red mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Mission -->
+<div class="bg-surface-white p-stack-lg rounded-xl border border-border-subtle shadow-sm flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-safety-red text-5xl mb-4 mx-auto" style="font-variation-settings: 'FILL' 1;">flag</span>
+<h3 class="font-headline-md text-headline-md text-industrial-charcoal mb-stack-sm">Our Mission</h3>
+<p class="font-body-md text-body-md text-secondary">
+                        "Offering prompt and perfect service delivery next to none." We are committed to exceeding expectations in every interaction, ensuring reliability and safety in every gas drop.
+                    </p>
+</div>
+<!-- Vision -->
+<div class="bg-industrial-charcoal p-stack-lg rounded-xl border border-on-surface-variant shadow-sm flex flex-col justify-center text-center md:col-span-2">
+<span class="material-symbols-outlined text-safety-red text-5xl mb-4 mx-auto" style="font-variation-settings: 'FILL' 1;">public</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-stack-sm">Our Vision</h3>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim">
+                        To be the leading and most trusted LP gas provider in Zimbabwe, while continuously expanding our operations and standard of excellence into global markets.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-white">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-industrial-charcoal mb-stack-md">Core Values</h2>
+<p class="font-body-md text-body-md text-secondary mb-stack-lg">The principles that guide our everyday operations and ensure we deliver the highest quality service to our customers.</p>
+<div class="space-y-stack-md">
+<div class="flex items-start gap-4">
+<div class="bg-surface-container w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-safety-red">group</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-industrial-charcoal mb-1">Client Priority</h4>
+<p class="font-body-md text-body-md text-secondary">Our customers are at the heart of everything we do. Your safety, satisfaction, and convenience are our primary focus.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-surface-container w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-safety-red">gavel</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-industrial-charcoal mb-1">Professionalism & Integrity</h4>
+<p class="font-body-md text-body-md text-secondary">We conduct our business with the utmost honesty, transparency, and adherence to rigorous safety standards.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-surface-container w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-safety-red">handshake</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-industrial-charcoal mb-1">Teamwork</h4>
+<p class="font-body-md text-body-md text-secondary">A cohesive, well-trained team is essential to delivering the complex logistical and technical services we offer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img alt="CG Gas Team" class="w-full h-48 object-cover rounded-lg border border-border-subtle shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvSbhVvgvvruYmVUrcfPcR0ifis2RL6QYyF1AKSUHvofj2nKjBWzAc-7fdI3wgx6-1a4OFQI8G2hIGaMt2LKBomg1_W-7eziQrsqFN68vhrHEpAbodcGc0lNCuSsz9amF7viNk-nsmKaBcspGM9wz4Qrroc_l3se-0m5nQjUkdDKC-t9Jyw0fyE-QcJidW4YJK4h5A4vgbQY6ixH0KifG5FiODS7PlS22hnFDUpU1ISUd_gIAGcH8p5MtUVWpkQF1ll_8"/>
+<img alt="Welcome to CG Gas Sign" class="w-full h-64 object-cover rounded-lg border border-border-subtle shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSOJLp_XThxeHSTIv9ujXFpqlwJ1yDMAP58Svan_l9MPyfWQ8RaUwtNlHHY8kSQCDpksGqdOyDAw_vhKNBiIul0n23ZtxL2iUuBZ-_glDQqrUySwuLMDG1YeafEFuYzFnSX4MsLhVwb2XnI-72DvCl3Hg9ys5kuurkrNUcK2SWU0fV8g86_-svVCT8itQbwv_LfGEzXp1HKfthDAWHyZdqugofkLYpwcQOOw5Q8KW_MVtWlEiUvcRJCevyKB9uCuO91f8"/>
+</div>
+<div class="pt-8">
+<img alt="CG Gas Operations Team" class="w-full h-80 object-cover rounded-lg border border-border-subtle shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQgxoCD2GmuW7uIJyoWO1GOEeotH_NjRIBpuojsDD8CTYsQauShmFZTwKCBbnkeGUpWZ-yavGBW854mDIuRX3Itvg5ydK-sHHxKw39FiSx0wWejzE70KOxoU-o9PB6qMNHwVZDWDU4EaK53VW40VqQ45n1D4lVtydzZGo3cQ0_Ak331_ht6NzYR9SJbSEvb1444xTDKZtSVWkm-r5rnu_1a3X3Gw27dpjidqawoi9lLHcv01rVotlSsOk1MrA3bZKGMQk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-industrial-charcoal">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-stack-sm">Comprehensive Gas Solutions</h2>
+<p class="font-body-md text-body-md text-secondary-fixed-dim mb-stack-lg max-w-2xl mx-auto">From residential refills to commercial installations, we provide a full spectrum of LP gas products and services.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="bg-surface-variant/10 p-stack-md rounded-lg border border-on-surface-variant hover:border-safety-red transition-colors">
+<span class="material-symbols-outlined text-safety-red text-4xl mb-4">propane</span>
+<h4 class="font-label-bold text-label-bold text-on-primary">LP Gas Supply</h4>
+</div>
+<div class="bg-surface-variant/10 p-stack-md rounded-lg border border-on-surface-variant hover:border-safety-red transition-colors">
+<span class="material-symbols-outlined text-safety-red text-4xl mb-4">build</span>
+<h4 class="font-label-bold text-label-bold text-on-primary">Installations</h4>
+</div>
+<div class="bg-surface-variant/10 p-stack-md rounded-lg border border-on-surface-variant hover:border-safety-red transition-colors">
+<span class="material-symbols-outlined text-safety-red text-4xl mb-4">home_repair_service</span>
+<h4 class="font-label-bold text-label-bold text-on-primary">Accessories & Tanks</h4>
+</div>
+<div class="bg-surface-variant/10 p-stack-md rounded-lg border border-on-surface-variant hover:border-safety-red transition-colors">
+<span class="material-symbols-outlined text-safety-red text-4xl mb-4">plumbing</span>
+<h4 class="font-label-bold text-label-bold text-on-primary">Repairs</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-industrial-charcoal dark:bg-black">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div>
+<div class="text-headline-md font-headline-md text-on-primary mb-4">CG Gas</div>
+<p class="font-body-md text-body-md text-secondary-fixed-dim">Fueling your daily life with safe, reliable LP gas solutions.</p>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-primary mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors opacity-80 hover:opacity-100 hover:text-safety-red" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md text-safety-red font-bold opacity-80 hover:opacity-100 transition-colors" href="#">About</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors opacity-80 hover:opacity-100 hover:text-safety-red" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-primary mb-4">Products</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors opacity-80 hover:opacity-100 hover:text-safety-red" href="#">Fireplaces</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors opacity-80 hover:opacity-100 hover:text-safety-red" href="#">Geysers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-primary mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors opacity-80 hover:opacity-100 hover:text-safety-red" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors opacity-80 hover:opacity-100 hover:text-safety-red" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-on-surface-variant px-margin-desktop py-6 max-w-container-max mx-auto text-center">
+<p class="font-caption text-caption text-secondary-fixed-dim">© 2024 CG Gas (Clive Gregory Gas Services). All rights reserved. Harare, Zimbabwe.</p>
+</div>
+</footer>
+</body></html>

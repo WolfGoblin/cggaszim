@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CG Gas - Gas Fireplaces</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#4e5f7c",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c4c6cd",
+                        "on-secondary-fixed": "#191c21",
+                        "on-surface": "#191c1d",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#ffb4a8",
+                        "outline": "#926f69",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-container": "#606369",
+                        "surface-dim": "#d9dadb",
+                        "primary": "#930000",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#c8d9fc",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed-variant": "#930000",
+                        "on-tertiary-fixed-variant": "#364763",
+                        "secondary-fixed": "#e1e2e9",
+                        "outline-variant": "#e7bdb6",
+                        "primary-container": "#c00000",
+                        "on-error": "#ffffff",
+                        "surface-white": "#FFFFFF",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-fixed": "#410000",
+                        "inverse-surface": "#2e3132",
+                        "tertiary-fixed-dim": "#b6c7e9",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#081c36",
+                        "surface": "#f8f9fa",
+                        "tertiary-fixed": "#d6e3ff",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-container": "#dedfe7",
+                        "tertiary": "#364763",
+                        "on-background": "#191c1d",
+                        "on-surface-variant": "#5d3f3b",
+                        "background": "#f8f9fa",
+                        "border-subtle": "#E5E7EB",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-fixed-variant": "#44474d",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary": "#5c5e64",
+                        "deep-navy": "#0A1D37",
+                        "industrial-charcoal": "#12151A",
+                        "surface-variant": "#e1e3e4",
+                        "safety-red": "#C00000",
+                        "primary-fixed": "#ffdad4",
+                        "surface-tint": "#c00000",
+                        "on-primary-container": "#ffcdc5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "section-padding": "80px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "caption": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-bold": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-display-lg, .font-headline-md, .font-headline-lg, .font-headline-lg-mobile { font-family: 'Montserrat', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased pt-[72px]">
+<!-- TopNavBar -->
+<!-- Top Navigation Bar -->
+<nav class="bg-surface-white dark:bg-industrial-charcoal fixed top-0 w-full z-50 border-b border-border-subtle dark:border-on-surface-variant shadow-sm transition-all duration-300 ease-in-out">
+  <div class="flex justify-between items-center px-margin-desktop py-3 max-w-container-max mx-auto px-4 md:px-margin-desktop">
+    <a href="index.html" class="flex items-center gap-3">
+      <img alt="CG Gas Logo" class="h-10 w-auto" src="../Logos/CG GAS Logo.png" />
+      <span class="text-headline-md font-headline-md text-primary dark:text-safety-red font-bold tracking-tight hidden sm:block">CG Gas</span>
+    </a>
+    
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors" href="index.html">Home</a>
+      <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors" href="about.html">About</a>
+      <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors" href="services.html">Services</a>
+      
+      <!-- Products Dropdown Menu -->
+      <div class="relative group">
+        <button class="text-primary dark:text-safety-red font-bold pb-1 flex items-center gap-1 py-2 focus:outline-none">
+          Products
+          <span class="material-symbols-outlined text-[18px]">expand_more</span>
+        </button>
+        <div class="absolute left-0 top-full hidden group-hover:block w-52 bg-surface-white dark:bg-industrial-charcoal border border-border-subtle shadow-xl rounded-md py-2 z-50 transition-all duration-200">
+          <a href="fireplaces.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-on-surface dark:text-surface-white hover:bg-surface-container hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-[20px] text-safety-red">fireplace</span>
+            Gas Fireplaces
+          </a>
+          <a href="geysers.html" class="flex items-center gap-3 px-4 py-2.5 text-sm text-on-surface dark:text-surface-white hover:bg-surface-container hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-[20px] text-safety-red">water_heater</span>
+            Gas Geysers
+          </a>
+        </div>
+      </div>
+
+      <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-safety-red transition-colors" href="contact.html">Contact</a>
+    </div>
+    
+    <a href="https://wa.me/263777489583" target="_blank" class="hidden md:flex items-center gap-2 bg-primary hover:bg-safety-red text-on-primary font-label-bold px-5 py-2.5 rounded transition-all shadow-sm">
+      <span class="material-symbols-outlined text-[20px]">chat</span>
+      WhatsApp Us
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-primary p-2">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border-subtle bg-surface-white dark:bg-industrial-charcoal px-6 py-4 space-y-3">
+    <a href="index.html" class="block font-body-md text-on-surface hover:text-primary py-1">Home</a>
+    <a href="about.html" class="block font-body-md text-on-surface hover:text-primary py-1">About Us</a>
+    <a href="services.html" class="block font-body-md text-on-surface hover:text-primary py-1">Services</a>
+    <div class="pl-3 border-l-2 border-primary space-y-2 py-1">
+      <span class="block text-xs font-bold text-secondary uppercase tracking-wider">Products Catalog</span>
+      <a href="fireplaces.html" class="block font-body-md text-primary font-semibold py-1">🔥 Gas Fireplaces</a>
+      <a href="geysers.html" class="block font-body-md text-primary font-semibold py-1">💧 Gas Geysers</a>
+    </div>
+    <a href="contact.html" class="block font-body-md text-on-surface hover:text-primary py-1">Contact Us</a>
+    <a href="https://wa.me/263777489583" target="_blank" class="flex items-center justify-center gap-2 w-full bg-primary text-on-primary font-label-bold py-2.5 rounded mt-2">
+      <span class="material-symbols-outlined text-[20px]">chat</span>
+      WhatsApp Us
+    </a>
+  </div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center bg-industrial-charcoal overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Premium Gas Fireplace" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc25-IGc91wZfDBf8OyhuvodwhdpKUaqU2GS2eVqInFKjrAAj0Db10J8VQsQxNn8CubDQ_UEA9bPaGH-VpdzTywyffeFlpi04t0CN8p9e6a1pVg3ttY4dIo4zPD0AMvAWmO1PvxzNacneG1WoKtDKChk2xefdAdI5thzigDywA0XokF_7ETuF6xm1Kr0qojvRVewHOKSx2st5_JohF5bITwV-HESPFiltZfxcIOIM2YEk-TOXaRcsw18dmpUepUT_voQM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-industrial-charcoal via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-desktop max-w-container-max mx-auto">
+<h1 class="font-display-lg text-display-lg text-on-primary mb-stack-md drop-shadow-md">Premium Gas Fireplaces</h1>
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-2xl mx-auto drop-shadow">
+                Elevate your space with our curated collection of modern, high-efficiency gas fireplaces. Safe, stylish, and built to last.
+            </p>
+</div>
+</section>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-desktop md:px-margin-desktop px-margin-mobile py-section-padding">
+<!-- Category Navigation -->
+<div class="mb-stack-lg flex flex-wrap gap-4 border-b border-border-subtle pb-4">
+<button class="font-label-bold text-label-bold px-4 py-2 bg-industrial-charcoal text-on-primary rounded">All</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-secondary hover:text-primary transition-colors">Drop-In</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-secondary hover:text-primary transition-colors">Built-In</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-secondary hover:text-primary transition-colors">Wall Mounted</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-secondary hover:text-primary transition-colors">Freestanding</button>
+<button class="font-label-bold text-label-bold px-4 py-2 text-secondary hover:text-primary transition-colors">Outdoor Firepits</button>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface-white border border-border-subtle rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Built-in Gas Fireplace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUPRwgK-TiGxCDoukiPLNyKDLHqUeJxtQ5vqfHD7IK3i42HCpZm439vdmWTsqWxBcJfApAYKMRqaK_sKcd8_JsTwPfrQr4qK_dj7l15X54LgE-LXJrIscEkdC_TZFZDBR8yX2Hs7sn_NqUSW1af6QtR6wRZuDLKAIYrpnZQn5jxntTQTmSCEsnwJwzzn80D3HxzJHX0gTeAOJ7u0Usewog5VVNkp4TfjnFe3CbjCCWISAVV6cVsZ5dDWSkw4U9k54lZLU"/>
+<span class="absolute top-4 left-4 bg-industrial-charcoal text-on-primary text-caption font-caption px-2 py-1 rounded-full uppercase tracking-wider">Built-In</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Linear Elegance 1200</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 flex-grow">A sleek, modern built-in linear fireplace perfect for contemporary living spaces. Features advanced remote control and high heat output.</p>
+<button class="w-full bg-surface-container text-on-surface py-2 rounded font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors border border-border-subtle">View Details</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-white border border-border-subtle rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+<div class="relative h-64 overflow-hidden bg-surface-variant flex items-center justify-center">
+<img alt="Wall Mounted Fireplace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXGP-22lKoNjAKV0hi_uze5-QbKOQUFD9lHN0jx5veZjZ_BgvryH9rkGgkCs4mwjAYw9mPsu7r3U9hHR_Jjby9Hx5Ek4vCbX_jYZdGy5-Y4buw3tH1T-LJmCNwtfXHGCDL5XEOsfcW2QxGaLuTd30lRXGbloU2KEA6ytRQ4RzKlOS31jrkHfUxKoWM90Lf7rqtjPnMQiyC19jIpnuDHRG1ZMyeRXb3vw7ZwIODl3twmEzyfMtZP2bRwWGEebGjXjbQ2S8"/>
+<span class="absolute top-4 left-4 bg-industrial-charcoal text-on-primary text-caption font-caption px-2 py-1 rounded-full uppercase tracking-wider">Wall Mounted</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Float 800 Series</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 flex-grow">Minimalist wall-mounted design that saves floor space while providing a stunning focal point and efficient heating.</p>
+<button class="w-full bg-surface-container text-on-surface py-2 rounded font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors border border-border-subtle">View Details</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-white border border-border-subtle rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Outdoor Firepit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz8GEQchx7XM5JEQIA0kzdb5Uff170nUj00qxegcHvPvwGWKAtaL-l5tEXF84YwBmb6YjU57_HPwMvSSpxFHBWBWQgrTzZ6Q33SnCdjuPknItSlnUx-hAqeCLoP8pcyZeMi_e_FGAC1nGqXPOj73EOgCnZnsabmdP6BkFvANoWDo9HHUhkULnZfalE-6-bz5lOIOtoJiXeA4vDcRjElIqvd1puyxCjbFn4vCUUGSlkIxgnJ82TkOjHBwll5f-2frHD4Ig"/>
+<span class="absolute top-4 left-4 bg-industrial-charcoal text-on-primary text-caption font-caption px-2 py-1 rounded-full uppercase tracking-wider">Outdoor Firepits</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Oasis Concrete Bowl</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 flex-grow">Durable glass-fiber reinforced concrete firepit bowl. Creates an inviting outdoor gathering space for cool evenings.</p>
+<button class="w-full bg-surface-container text-on-surface py-2 rounded font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors border border-border-subtle">View Details</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-white border border-border-subtle rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Freestanding Stove" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv6IhL3g9KfN3oTYjRHxVWJkrbP2Q_ckiDuQosFEj_y4jYOOVdr6pfCqVZhTYLmCQCQhN384w6m43dxkEiOzRbS-J2fNhXN3eyKdEOsbpxMmFQnl7ydD879ZxbMoX8oVW1idoIyg5OPZ2N5ZwZSzCOTFHwZg2oQ6wl7s_wgZNCxDW2-uJ2MhKe0KJAe0cFW7oNQxz_J0ZcCktuKsJ9U2MYAF5ZdEbl-TJz1UE7JH-_QYLCLcJNZvTfUYUF7bekADYtZ4M"/>
+<span class="absolute top-4 left-4 bg-industrial-charcoal text-on-primary text-caption font-caption px-2 py-1 rounded-full uppercase tracking-wider">Freestanding</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Classic Iron Gas Stove</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 flex-grow">Traditional cast-iron aesthetic with the convenience and cleanliness of modern gas technology. Ideal for cozy corners.</p>
+<button class="w-full bg-surface-container text-on-surface py-2 rounded font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors border border-border-subtle">View Details</button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="bg-surface-white border border-border-subtle rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Square Outdoor Firepit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPyPklau0tXnS9KQ_TmrgVWOKRDEZYGZtApxZhabPV2NwMPLpZlWeUHLexqoq80sVzMNtHz7z4U0ADKfaI_X8PnZM_enUUSxMhrnyLu2mfo4Y2tIWZ5kEuDFUEqNkTMzfqOE6xU0f7kgcib9u4vwY27mScSYMoUGVTNKpZZ5RpLvCIm4hYQiCBccfgWrzPA_hL3PvOjt613W5vBN-SnGRoLOTmcnvtwR2zuyx1FFElbAR8Nq3DH2u4b95yHt1Dg6Tmv64"/>
+<span class="absolute top-4 left-4 bg-industrial-charcoal text-on-primary text-caption font-caption px-2 py-1 rounded-full uppercase tracking-wider">Outdoor Firepits</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Terra Square Fire Table</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 flex-grow">A modern geometric fire table that doubles as an outdoor coffee table when not in use. Features a sleek metallic finish.</p>
+<button class="w-full bg-surface-container text-on-surface py-2 rounded font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors border border-border-subtle">View Details</button>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="bg-surface-white border border-border-subtle rounded-lg overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Tall Freestanding Fireplace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf3TTAVmS3U64z268jJim1xBM2s6yWOehPdRIViD55o6KD6kOte3MgFMMuXGeSLM6HTjF6TMJB9nirkbYWMi9VdScwhskRL4B1iqGh1JrYFEzOnrD2JF9QKc_9pzqf0nsnEXhvkqnbR7Ur1RKMnp6JSgQ2YuMlbHyD5Har8YuGPDFOTVXkRYb7uqI4gYPCCV0xkdLk6Q-K7b3Xn756yXOGsi7mM2mPVICiOrpkniwLDcjlQwTEyzezINBiJd3UfS1rjEk"/>
+<span class="absolute top-4 left-4 bg-industrial-charcoal text-on-primary text-caption font-caption px-2 py-1 rounded-full uppercase tracking-wider">Freestanding</span>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Apex Tower Fire</h3>
+<p class="font-body-md text-body-md text-secondary mb-4 flex-grow">A striking vertical design that draws the eye upward. Perfect for modern industrial lofts or spaces with high ceilings.</p>
+<button class="w-full bg-surface-container text-on-surface py-2 rounded font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors border border-border-subtle">View Details</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-industrial-charcoal dark:bg-black w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div>
+<span class="text-headline-md font-headline-md text-on-primary mb-4 block">CG Gas</span>
+<p class="font-body-md text-body-md text-secondary-fixed-dim">Premium gas services and installations.</p>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-primary mb-4 uppercase">Links</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors" href="#">About</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-primary mb-4 uppercase">Products</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-body-md text-body-md text-safety-red font-bold" href="#">Fireplaces</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors" href="#">Geysers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-primary mb-4 uppercase">Legal</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors" href="#">Contact</a></li>
+<li><a class="font-body-md text-body-md text-secondary-fixed-dim hover:text-on-primary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-secondary px-margin-desktop py-4 text-center">
+<p class="font-body-md text-body-md text-secondary-fixed-dim text-sm">© 2024 CG Gas (Clive Gregory Gas Services). All rights reserved. Harare, Zimbabwe.</p>
+</div>
+</footer>
+
+<!-- Product Details Modal -->
+<div id="product-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+  <div class="bg-surface-white dark:bg-industrial-charcoal border border-border-subtle max-w-2xl w-full rounded-xl shadow-2xl overflow-hidden relative my-8">
+    <button onclick="closeProductModal()" class="absolute top-4 right-4 bg-surface-container dark:bg-surface-container-high text-on-surface rounded-full p-2 hover:bg-primary hover:text-on-primary transition-colors z-10">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div id="modal-content" class="p-6 md:p-8">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body></html>
