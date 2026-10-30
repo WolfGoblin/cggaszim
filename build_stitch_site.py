@@ -24,7 +24,6 @@ def get_navbar(active_page):
   <div class="flex justify-between items-center px-margin-desktop py-3 max-w-container-max mx-auto px-4 md:px-margin-desktop">
     <a href="index.html" class="flex items-center gap-3">
       <img alt="CG Gas Logo" class="h-10 w-auto" src="../Logos/CG GAS Logo.png" />
-      <span class="text-headline-md font-headline-md text-primary dark:text-safety-red font-bold tracking-tight hidden sm:block">CG Gas</span>
     </a>
     
     <div class="hidden md:flex gap-8 items-center">
@@ -71,8 +70,8 @@ def get_navbar(active_page):
     <a href="services.html" class="block font-body-md text-on-surface hover:text-primary py-1">Services</a>
     <div class="pl-3 border-l-2 border-primary space-y-2 py-1">
       <span class="block text-xs font-bold text-secondary uppercase tracking-wider">Products Catalog</span>
-      <a href="fireplaces.html" class="block font-body-md text-primary font-semibold py-1">🔥 Gas Fireplaces</a>
-      <a href="geysers.html" class="block font-body-md text-primary font-semibold py-1">💧 Gas Geysers</a>
+      <a href="fireplaces.html" class="block font-body-md text-primary font-semibold py-1">Gas Fireplaces</a>
+      <a href="geysers.html" class="block font-body-md text-primary font-semibold py-1">Gas Geysers</a>
     </div>
     <a href="contact.html" class="block font-body-md text-on-surface hover:text-primary py-1">Contact Us</a>
     <a href="https://wa.me/263777489583" target="_blank" class="flex items-center justify-center gap-2 w-full bg-primary text-on-primary font-label-bold py-2.5 rounded mt-2">
